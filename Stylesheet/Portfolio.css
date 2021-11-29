@@ -347,12 +347,6 @@ footer {
     background-color: #292944;
 }
 
-/* This is applied to the columns in the final row */
-.Column_tall {
-    padding-top: 3.5%;
-    height: 450px;
-}
-
 /* THis inserts something after the content of selected elements */
 .Row:after {
     content: "";
