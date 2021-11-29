@@ -7,7 +7,7 @@ function closeForm() {
 }
 
 //This function displays the first image in the slideshow when the page loads
-var slideIndes = 1;
+var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -37,7 +37,7 @@ function showSlides(n) {
 
 //This code will create close the contact form when the user clicks off of it
 document.addEventListener("click", function(event){
-    if (event.target.matches(".cencel") || !event.target.closest(".form-popup") && !event.target.closest(".Pop_Up_Button") && !event.target.closest(".contact")){
+    if (event.target.matches(".cancel") || !event.target.closest(".form-popup") && !event.target.closest(".Pop_Up_Button") && !event.target.closest(".contact")){
         closeForm()
     }
 }, false )

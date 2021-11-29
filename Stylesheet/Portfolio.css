@@ -82,9 +82,10 @@ q {
 
 /* Image elements */
 img {
+    filter: grayscale(75%);
     border-radius: 8px;
     max-width: 100%;
-    height: 340px;
+    max-height: 100%;
     display: block;
     margin: auto auto auto auto;
 }
@@ -93,14 +94,6 @@ img {
 img:hover {
     transition: transform 1s;
     transform: scale(1.1);
-}
-
-/* The @media rule is used in media queries to apply different styles for different media/types of devices */
-@media screen and (max-width: 576px) {
-    img {
-        height: 100px;
-        margin-top: 150px;
-    }
 }
 
 /* Styling for footer element */
@@ -146,14 +139,6 @@ footer {
 @keyframes movNavText {
     from {top: -100vw;}
     to {top: 0vw;}
-}
-
-/* Screens 576px and smaller will display navbar links equally distributed */
-@media screen and (max-width: 576px) {
-    .Navbar a{
-        width: 25%;
-        font-size: 12px;
-    }
 }
 
 /* Navbar hover effects */
@@ -330,13 +315,6 @@ footer {
     padding: 1.6%;
     height: 450px;
     background-color: #f2f2f2;
-}
-
-/* Small screens will display scroll bar */
-@media screen and (max-width: 576px) {
-    .Column_1 {
-        overflow: auto;
-    }
 }
 
 .Column_2 {
