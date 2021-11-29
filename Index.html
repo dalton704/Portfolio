@@ -3,26 +3,23 @@
     <!--Head-->
     <head>
         <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width" />
+        <meta name="viewport" content="width=device-width" />
         <title>Dalton Scott</title>
         <link rel="stylesheet" type="text/css" href="Stylesheet/Portfolio.css">
         <link rel="icon" href="./Images/favicon.ico" type="image/x-icon">
     </head>
 
     <!--Body-->
-    <body class="backgroun">
+    <body class="Background">
 
         <!--NAvbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <a href="Slideshow">SlideShow</a>
             <a href="#About">About</a>
             <a href="GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
-
-        <!--Breaks inserted to add space-->
-        <br>
-        <br>
 
         <!--Background video-->
         <div id="Home">
@@ -48,6 +45,52 @@
                     <br> Thank you for stopping by and enjoy!
                 </p>
             </strong>
+        </div>
+
+        <!--Slideshow section added-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!--Slide 1 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/Personal.jpg" alt="Picture of me">
+                        <div class="text">I would love to help you out on your Projects.</div>
+                    </div>
+                    <!--Slide 2 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JavaScript">
+                        <div class="text">I will be a full-stack developer, <br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!--Slide 3 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/Python.png" alt="Python Logo">
+                        <div class="test">the popular programming language Python,</div>
+                    </div>
+                    <!--Slide 4 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/SQL_and_Database(1).jpg" alt="SQL Logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!--Slide 5 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/Binary.jpg" alt="Binary">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+                    <!--Previous and Next buttons-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!--Slideshow dots-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
         </div>
 
         <!--About Section-->
@@ -114,5 +157,6 @@
                 <p class="center">&copy; Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
             </p>
         </footer>
+        <script src="JS/JavaScript.js"></script>
     </body>
 </html>
