@@ -92,8 +92,7 @@ img {
 
 /*Image element hover effects */
 img:hover {
-    transition: transform 1s;
-    transform: scale(1.1);
+    filter: grayscale(5%)
 }
 
 /* Styling for footer element */
@@ -207,7 +206,7 @@ footer {
     width: 39.5vw;
     height: auto;
     padding-top: 4%;
-    position: absolute;
+    position: relative;
     margin: auto;
 }
 
